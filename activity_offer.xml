@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".OfferActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/teal_200"
+            android:text="@string/login_tv_banner"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_ponuda_potražnja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nova ponuda/potražnja"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unesite ime ponude/potraznje"
+            android:id="@+id/et_ime"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unesite opis ponude/potraznje"
+            android:id="@+id/et_opis"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unesite cijena ponude/potraznje"
+            android:id="@+id/et_cijena"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unesite kontakt"
+            android:id="@+id/et_kontakt"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodaj"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/teal_200"
+            android:id="@+id/btn_add"/>
+
+    </LinearLayout>
+
+</ScrollView>
